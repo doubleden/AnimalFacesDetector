@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		05126CB12E2A72D100CE938F /* AnimalFacesDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05126CAD2E2A72D100CE938F /* AnimalFacesDetectorApp.swift */; };
+		05126CB22E2A72D100CE938F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05126CAF2E2A72D100CE938F /* ContentView.swift */; };
+		05126CB32E2A72D100CE938F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05126CAE2E2A72D100CE938F /* Assets.xcassets */; };
+		05126CB62E2A72FF00CE938F /* AnimalFacesClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 05126CB52E2A72FF00CE938F /* AnimalFacesClassifier.mlmodel */; };
+		05126CB82E2A732000CE938F /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05126CB72E2A732000CE938F /* ContentViewModel.swift */; };
+		05126CCA2E2A75AB00CE938F /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05126CC92E2A75AB00CE938F /* ARViewContainer.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		05126C9F2E2A725D00CE938F /* AnimalFacesDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalFacesDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05126CAD2E2A72D100CE938F /* AnimalFacesDetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFacesDetectorApp.swift; sourceTree = "<group>"; };
+		05126CAE2E2A72D100CE938F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05126CAF2E2A72D100CE938F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		05126CB52E2A72FF00CE938F /* AnimalFacesClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AnimalFacesClassifier.mlmodel; sourceTree = "<group>"; };
+		05126CB72E2A732000CE938F /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		05126CC92E2A75AB00CE938F /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		05126CA12E2A725D00CE938F /* AnimalFacesDetector */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = AnimalFacesDetector;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		05126C9C2E2A725D00CE938F /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		05126C962E2A725D00CE938F = {
 			isa = PBXGroup;
 			children = (
-				05126CA12E2A725D00CE938F /* AnimalFacesDetector */,
+				05126CB02E2A72D100CE938F /* AnimalFacesDetector */,
 				05126CA02E2A725D00CE938F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,27 @@
 				05126C9F2E2A725D00CE938F /* AnimalFacesDetector.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		05126CB02E2A72D100CE938F /* AnimalFacesDetector */ = {
+			isa = PBXGroup;
+			children = (
+				05126CAD2E2A72D100CE938F /* AnimalFacesDetectorApp.swift */,
+				05126CC92E2A75AB00CE938F /* ARViewContainer.swift */,
+				05126CAF2E2A72D100CE938F /* ContentView.swift */,
+				05126CB72E2A732000CE938F /* ContentViewModel.swift */,
+				05126CB42E2A72DE00CE938F /* AI */,
+				05126CAE2E2A72D100CE938F /* Assets.xcassets */,
+			);
+			path = AnimalFacesDetector;
+			sourceTree = "<group>";
+		};
+		05126CB42E2A72DE00CE938F /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				05126CB52E2A72FF00CE938F /* AnimalFacesClassifier.mlmodel */,
+			);
+			path = AI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +87,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				05126CA12E2A725D00CE938F /* AnimalFacesDetector */,
 			);
 			name = AnimalFacesDetector;
 			packageProductDependencies = (
@@ -109,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05126CB32E2A72D100CE938F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05126CB82E2A732000CE938F /* ContentViewModel.swift in Sources */,
+				05126CB12E2A72D100CE938F /* AnimalFacesDetectorApp.swift in Sources */,
+				05126CB22E2A72D100CE938F /* ContentView.swift in Sources */,
+				05126CB62E2A72FF00CE938F /* AnimalFacesClassifier.mlmodel in Sources */,
+				05126CCA2E2A75AB00CE938F /* ARViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,8 +282,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM64M5A8BU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access to the camera is required to scan the QR code to wash the car";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -278,8 +311,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM64M5A8BU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access to the camera is required to scan the QR code to wash the car";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
