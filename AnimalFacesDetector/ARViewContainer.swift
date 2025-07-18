@@ -48,7 +48,7 @@ extension ARViewContainer {
         }
         
         func session(_ session: ARSession, didUpdate frame: ARFrame) {
-            guard let request = viewModel.visionRequest, viewModel.isModelLoaded else {
+            guard let request = viewModel.visionRequest else {
                 return
             }
             

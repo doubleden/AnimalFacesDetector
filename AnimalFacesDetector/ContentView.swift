@@ -16,27 +16,6 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
             
-            // Статус модели
-            if !contentVM.isModelLoaded {
-                HStack {
-                    ProgressView()
-                        .scaleEffect(0.8)
-                    Text("Загружаю CoreML модель...")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-            }
-            
-            // Ошибки
-            if let errorMessage = contentVM.errorMessage {
-                Text(errorMessage)
-                    .font(.caption)
-                    .foregroundStyle(.red)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-            }
-            
-            // Результат
             VStack {
                 Text("Обнаружено:")
                     .font(.headline)
@@ -54,7 +33,6 @@ struct ContentView: View {
                 contentVM.showCamera()
             }
             .buttonStyle(.borderedProminent)
-            .disabled(!contentVM.isModelLoaded)
         }
         .padding()
         .sheet(isPresented: $contentVM.isCameraShow) {
